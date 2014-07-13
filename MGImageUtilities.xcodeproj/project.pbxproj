@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		3067851E1970D2A8005FEEBD /* UniversalLib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3067851F1970D2A8005FEEBD /* Build configuration list for PBXAggregateTarget "UniversalLib" */;
+			buildPhases = (
+				306785221970D2AD005FEEBD /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversalLib;
+			productName = UniversalLib;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* MGImageUtilitiesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MGImageUtilitiesAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -13,10 +27,45 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		306784F81970D264005FEEBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		306784FD1970D264005FEEBD /* MGImageUtilitiesLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 306784FC1970D264005FEEBD /* MGImageUtilitiesLib.h */; };
+		306785061970D265005FEEBD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306785051970D265005FEEBD /* XCTest.framework */; };
+		306785071970D265005FEEBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		306785081970D265005FEEBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		3067850B1970D265005FEEBD /* libMGImageUtilitiesLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 306784F71970D264005FEEBD /* libMGImageUtilitiesLib.a */; };
+		306785111970D265005FEEBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3067850F1970D265005FEEBD /* InfoPlist.strings */; };
+		306785131970D265005FEEBD /* MGImageUtilitiesLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 306785121970D265005FEEBD /* MGImageUtilitiesLibTests.m */; };
+		3067851A1970D286005FEEBD /* UIImage+ProportionalFill.h in Sources */ = {isa = PBXBuildFile; fileRef = C901793F11E13174002B9BA3 /* UIImage+ProportionalFill.h */; };
+		3067851B1970D286005FEEBD /* UIImage+ProportionalFill.m in Sources */ = {isa = PBXBuildFile; fileRef = C901794011E13174002B9BA3 /* UIImage+ProportionalFill.m */; };
+		3067851C1970D286005FEEBD /* UIImage+Tint.h in Sources */ = {isa = PBXBuildFile; fileRef = C901794111E13174002B9BA3 /* UIImage+Tint.h */; };
+		3067851D1970D286005FEEBD /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = C901794211E13174002B9BA3 /* UIImage+Tint.m */; };
 		C901794411E13174002B9BA3 /* UIImage+ProportionalFill.m in Sources */ = {isa = PBXBuildFile; fileRef = C901794011E13174002B9BA3 /* UIImage+ProportionalFill.m */; };
 		C901794511E13174002B9BA3 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = C901794211E13174002B9BA3 /* UIImage+Tint.m */; };
 		C901797A11E1398F002B9BA3 /* original.png in Resources */ = {isa = PBXBuildFile; fileRef = C901797911E1398F002B9BA3 /* original.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		306785091970D265005FEEBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 306784F61970D264005FEEBD;
+			remoteInfo = MGImageUtilitiesLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		306784F51970D264005FEEBD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				306784FD1970D264005FEEBD /* MGImageUtilitiesLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -27,6 +76,15 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		306784F71970D264005FEEBD /* libMGImageUtilitiesLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMGImageUtilitiesLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		306784FB1970D264005FEEBD /* MGImageUtilitiesLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGImageUtilitiesLib-Prefix.pch"; sourceTree = "<group>"; };
+		306784FC1970D264005FEEBD /* MGImageUtilitiesLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGImageUtilitiesLib.h; sourceTree = "<group>"; };
+		306784FE1970D264005FEEBD /* MGImageUtilitiesLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGImageUtilitiesLib.m; sourceTree = "<group>"; };
+		306785041970D265005FEEBD /* MGImageUtilitiesLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGImageUtilitiesLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		306785051970D265005FEEBD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3067850E1970D265005FEEBD /* MGImageUtilitiesLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MGImageUtilitiesLibTests-Info.plist"; sourceTree = "<group>"; };
+		306785101970D265005FEEBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		306785121970D265005FEEBD /* MGImageUtilitiesLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGImageUtilitiesLibTests.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* MGImageUtilities_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGImageUtilities_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MGImageUtilities-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MGImageUtilities-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C901793F11E13174002B9BA3 /* UIImage+ProportionalFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ProportionalFill.h"; sourceTree = "<group>"; };
@@ -50,6 +108,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		306784F41970D264005FEEBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306784F81970D264005FEEBD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306785011970D265005FEEBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3067850B1970D265005FEEBD /* libMGImageUtilitiesLib.a in Frameworks */,
+				306785061970D265005FEEBD /* XCTest.framework in Frameworks */,
+				306785081970D265005FEEBD /* UIKit.framework in Frameworks */,
+				306785071970D265005FEEBD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* MGImageUtilities.app */,
+				306784F71970D264005FEEBD /* libMGImageUtilitiesLib.a */,
+				306785041970D265005FEEBD /* MGImageUtilitiesLibTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +157,8 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				306784F91970D264005FEEBD /* MGImageUtilitiesLib */,
+				3067850C1970D265005FEEBD /* MGImageUtilitiesLibTests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -110,8 +191,45 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				306785051970D265005FEEBD /* XCTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		306784F91970D264005FEEBD /* MGImageUtilitiesLib */ = {
+			isa = PBXGroup;
+			children = (
+				306784FC1970D264005FEEBD /* MGImageUtilitiesLib.h */,
+				306784FE1970D264005FEEBD /* MGImageUtilitiesLib.m */,
+				306784FA1970D264005FEEBD /* Supporting Files */,
+			);
+			path = MGImageUtilitiesLib;
+			sourceTree = "<group>";
+		};
+		306784FA1970D264005FEEBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				306784FB1970D264005FEEBD /* MGImageUtilitiesLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3067850C1970D265005FEEBD /* MGImageUtilitiesLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				306785121970D265005FEEBD /* MGImageUtilitiesLibTests.m */,
+				3067850D1970D265005FEEBD /* Supporting Files */,
+			);
+			path = MGImageUtilitiesLibTests;
+			sourceTree = "<group>";
+		};
+		3067850D1970D265005FEEBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3067850E1970D265005FEEBD /* MGImageUtilitiesLibTests-Info.plist */,
+				3067850F1970D265005FEEBD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C901792E11E13130002B9BA3 /* Demo */ = {
@@ -154,6 +272,41 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* MGImageUtilities.app */;
 			productType = "com.apple.product-type.application";
 		};
+		306784F61970D264005FEEBD /* MGImageUtilitiesLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306785181970D265005FEEBD /* Build configuration list for PBXNativeTarget "MGImageUtilitiesLib" */;
+			buildPhases = (
+				306784F31970D264005FEEBD /* Sources */,
+				306784F41970D264005FEEBD /* Frameworks */,
+				306784F51970D264005FEEBD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGImageUtilitiesLib;
+			productName = MGImageUtilitiesLib;
+			productReference = 306784F71970D264005FEEBD /* libMGImageUtilitiesLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		306785031970D265005FEEBD /* MGImageUtilitiesLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306785191970D265005FEEBD /* Build configuration list for PBXNativeTarget "MGImageUtilitiesLibTests" */;
+			buildPhases = (
+				306785001970D265005FEEBD /* Sources */,
+				306785011970D265005FEEBD /* Frameworks */,
+				306785021970D265005FEEBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3067850A1970D265005FEEBD /* PBXTargetDependency */,
+			);
+			name = MGImageUtilitiesLibTests;
+			productName = MGImageUtilitiesLibTests;
+			productReference = 306785041970D265005FEEBD /* MGImageUtilitiesLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,6 +314,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0410;
+				TargetAttributes = {
+					306785031970D265005FEEBD = {
+						TestTargetID = 1D6058900D05DD3D006BFB54;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MGImageUtilities" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -174,6 +332,9 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* MGImageUtilities */,
+				306784F61970D264005FEEBD /* MGImageUtilitiesLib */,
+				306785031970D265005FEEBD /* MGImageUtilitiesLibTests */,
+				3067851E1970D2A8005FEEBD /* UniversalLib */,
 			);
 		};
 /* End PBXProject section */
@@ -188,7 +349,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		306785021970D265005FEEBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306785111970D265005FEEBD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		306785221970D2AD005FEEBD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target MGImageUtilitiesLib ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target MGImageUtilitiesLib -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/libMGImageUtilitiesLib.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/libMGImageUtilitiesLib.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/libMGImageUtilitiesLib.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -202,7 +387,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		306784F31970D264005FEEBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3067851A1970D286005FEEBD /* UIImage+ProportionalFill.h in Sources */,
+				3067851B1970D286005FEEBD /* UIImage+ProportionalFill.m in Sources */,
+				3067851C1970D286005FEEBD /* UIImage+Tint.h in Sources */,
+				3067851D1970D286005FEEBD /* UIImage+Tint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306785001970D265005FEEBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306785131970D265005FEEBD /* MGImageUtilitiesLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3067850A1970D265005FEEBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 306784F61970D264005FEEBD /* MGImageUtilitiesLib */;
+			targetProxy = 306785091970D265005FEEBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3067850F1970D265005FEEBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				306785101970D265005FEEBD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -231,6 +454,184 @@
 				INFOPLIST_FILE = "MGImageUtilities-Info.plist";
 				PRODUCT_NAME = MGImageUtilities;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		306785141970D265005FEEBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/MGImageUtilitiesLib.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MGImageUtilitiesLib/MGImageUtilitiesLib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		306785151970D265005FEEBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/MGImageUtilitiesLib.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MGImageUtilitiesLib/MGImageUtilitiesLib-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		306785161970D265005FEEBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MGImageUtilities.app/MGImageUtilities";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MGImageUtilitiesLib/MGImageUtilitiesLib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "MGImageUtilitiesLibTests/MGImageUtilitiesLibTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		306785171970D265005FEEBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MGImageUtilities.app/MGImageUtilities";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MGImageUtilitiesLib/MGImageUtilitiesLib-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "MGImageUtilitiesLibTests/MGImageUtilitiesLibTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		306785201970D2A8005FEEBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		306785211970D2A8005FEEBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -270,6 +671,30 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		306785181970D265005FEEBD /* Build configuration list for PBXNativeTarget "MGImageUtilitiesLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306785141970D265005FEEBD /* Debug */,
+				306785151970D265005FEEBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		306785191970D265005FEEBD /* Build configuration list for PBXNativeTarget "MGImageUtilitiesLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306785161970D265005FEEBD /* Debug */,
+				306785171970D265005FEEBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3067851F1970D2A8005FEEBD /* Build configuration list for PBXAggregateTarget "UniversalLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306785201970D2A8005FEEBD /* Debug */,
+				306785211970D2A8005FEEBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MGImageUtilities" */ = {
 			isa = XCConfigurationList;
